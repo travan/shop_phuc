@@ -275,13 +275,14 @@ function xGetSPbyID(id) {
       var iSP_ID = data[j].sp_id
       var strSP_TenSanPham = data[j].sp_ten
       var strSP_LinkAnh = data[j].sp_hinhanh
-      var iCTSP_xuatxu = data[j].ctsp_xuatxu
+      var strCTSP_xuatxu = data[j].ctsp_xuatxu
       var strCTSP_model = data[j].ctsp_model
       var strCTSP_thongso = data[j].ctsp_thongso
       var strCTSP_kichthuoc = data[j].ctsp_kichthuoc
       var strCTSP_congsuat = data[j].ctsp_congsuat
       var strCTSP_khoiluong = data[j].ctsp_khoiluong
       var strCTSP_dacdiem = data[j].ctsp_dacdiem
+      var strCTSP_hangsx = data[j].ctsp_hangsx
       strVar += '		<div class="modal-dialog" role="document">'
       strVar += '			<div class="modal-content modal-info">'
       strVar += '				<div class="modal-header">'
@@ -296,11 +297,13 @@ function xGetSPbyID(id) {
       strVar += '					</div>'
       strVar += '					<div class="col-md-5 span-1 ">'
       strVar += '						<h3>' + strSP_TenSanPham + '</h3>'
+      strVar += '						<p class="in-para">' + strCTSP_xuatxu + '</p>'
       strVar += '						<p class="in-para">' + strCTSP_thongso + '</p>'
       strVar += '						<p class="in-para">' + strCTSP_model + '</p>'
       strVar += '						<p class="in-para">' + strCTSP_kichthuoc + '</p>'
       strVar += '						<p class="in-para">' + strCTSP_congsuat + '</p>'
       strVar += '						<p class="in-para">' + strCTSP_khoiluong + '</p>'
+      strVar += '						<p class="in-para">' + strCTSP_hangsx + '</p>'
       strVar += '					</div>'
       strVar += '					<div>'
       strVar += '						<div class="price_single">'
