@@ -15,7 +15,7 @@ const config = {
   user: 'postgres',
   database: 'shop_phuc',
   password: 'postgres',
-  host: 'localhost',
+  host: '14.225.3.164',
   port: 5432,
   idleTimeoutMillis: 30000
 }
