@@ -93,7 +93,7 @@ function xGetSPbyID(id) {
       var strCTSP_congsuat = data[j].ctsp_congsuat
       var strCTSP_khoiluong = data[j].ctsp_khoiluong
       var strCTSP_dacdiem = data[j].ctsp_dacdiem
-      var strCTSP_hangSX = data[j].ctsp_hangsx
+      var strCTSP_hangsx = data[j].ctsp_hangsx
       strVar += '		<div class="modal-dialog" role="document">'
       strVar += '			<div class="modal-content modal-info">'
       strVar += '				<div class="modal-header">'
