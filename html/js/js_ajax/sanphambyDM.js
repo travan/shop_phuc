@@ -94,6 +94,13 @@ function xGetSPbyID(id) {
       var strCTSP_khoiluong = data[j].ctsp_khoiluong
       var strCTSP_dacdiem = data[j].ctsp_dacdiem
       var strCTSP_hangsx = data[j].ctsp_hangsx
+
+      var strCTSP_nhietdo = data[j].ctsp_nhietdo
+      var strCTSP_nguondien = data[j].ctsp_nguondien
+      var strCTSP_thanhphan = data[j].ctsp_thanhphan
+      var strCTSP_cachbaoquan = data[j].ctsp_cachbaoquan
+      var strCTSP_cachsudung = data[j].ctsp_cachsudung
+
       strVar += '		<div class="modal-dialog" role="document">'
       strVar += '			<div class="modal-content modal-info">'
       strVar += '				<div class="modal-header">'
@@ -109,20 +116,32 @@ function xGetSPbyID(id) {
       strVar += '					<div class="col-md-5 span-1 ">'
       strVar += '						<h3>' + strSP_TenSanPham + '</h3>'
       if (strCTSP_xuatxu !== null) {
-        strVar += '						<p class="in-para" id="' + strCTSP_xuatxu + '">' + strCTSP_xuatxu + '</p>'
+        strVar += '						<p class="in-para" id="' + strCTSP_xuatxu + '">Xuất xứ: ' + strCTSP_xuatxu + '</p>'
       }
       if (strCTSP_thongso !== null)
-        strVar += '						<p class="in-para" id="' + strCTSP_thongso + '">' + strCTSP_thongso + '</p>'
+        strVar += '						<p class="in-para" id="' + strCTSP_thongso + '">Thông số: ' + strCTSP_thongso + '</p>'
       if (strCTSP_model !== null)
-        strVar += '						<p class="in-para" id="' + strCTSP_model + '">' + strCTSP_model + '</p>'
+        strVar += '						<p class="in-para" id="' + strCTSP_model + '">Model: ' + strCTSP_model + '</p>'
       if (strCTSP_kichthuoc !== null)
-        strVar += '						<p class="in-para" id="' + strCTSP_kichthuoc + '">' + strCTSP_kichthuoc + '</p>'
+        strVar += '						<p class="in-para" id="' + strCTSP_kichthuoc + '">Kích thước: ' + strCTSP_kichthuoc + '</p>'
       if (strCTSP_congsuat !== null)
-        strVar += '						<p class="in-para" id="' + strCTSP_congsuat + '">' + strCTSP_congsuat + '</p>'
+        strVar += '						<p class="in-para" id="' + strCTSP_congsuat + '">Công suất: ' + strCTSP_congsuat + '</p>'
       if (strCTSP_khoiluong !== null)
-        strVar += '						<p class="in-para" id="' + strCTSP_khoiluong + '">' + strCTSP_khoiluong + '</p>'
+        strVar += '						<p class="in-para" id="' + strCTSP_khoiluong + '">Trọng lượng : ' + strCTSP_khoiluong + '</p>'
       if (strCTSP_hangsx !== null)
-        strVar += '						<p class="in-para" id="' + strCTSP_hangsx + '">' + strCTSP_hangsx + '</p>'
+        strVar += '						<p class="in-para" id="' + strCTSP_hangsx + '">Hãng sản xuất: ' + strCTSP_hangsx + '</p>'
+
+        if (strCTSP_nhietdo !== null)
+        strVar += '						<p class="in-para" id="' + strCTSP_nhietdo + '">Nhiệt độ: ' + strCTSP_nhietdo + '</p>'
+      if (strCTSP_nguondien !== null)
+        strVar += '						<p class="in-para" id="' + strCTSP_nguondien + '">Nguồn điện: ' + strCTSP_nguondien + '</p>'
+      if (strCTSP_thanhphan !== null)
+        strVar += '						<p class="in-para" id="' + strCTSP_thanhphan + '">Thành phần: ' + strCTSP_thanhphan + '</p>'
+      if (strCTSP_cachbaoquan !== null)
+        strVar += '						<p class="in-para" id="' + strCTSP_cachbaoquan + '">Cách bảo quản: ' + strCTSP_cachbaoquan + '</p>'
+      if (strCTSP_cachsudung !== null)
+        strVar += '						<p class="in-para" id="' + strCTSP_cachsudung + '">Cách sử dụng: ' + strCTSP_cachsudung + '</p>'
+
       strVar += '					</div>'
       strVar += '					<div>'
       strVar += '						<div class="price_single">'
