@@ -297,13 +297,21 @@ function xGetSPbyID(id) {
       strVar += '					</div>'
       strVar += '					<div class="col-md-5 span-1 ">'
       strVar += '						<h3>' + strSP_TenSanPham + '</h3>'
-      strVar += '						<p class="in-para">' + strCTSP_xuatxu + '</p>'
-      strVar += '						<p class="in-para">' + strCTSP_thongso + '</p>'
-      strVar += '						<p class="in-para">' + strCTSP_model + '</p>'
-      strVar += '						<p class="in-para">' + strCTSP_kichthuoc + '</p>'
-      strVar += '						<p class="in-para">' + strCTSP_congsuat + '</p>'
-      strVar += '						<p class="in-para">' + strCTSP_khoiluong + '</p>'
-      strVar += '						<p class="in-para">' + strCTSP_hangsx + '</p>'
+      if (strCTSP_xuatxu !== null) {
+        strVar += '						<p class="in-para" id="' + strCTSP_xuatxu + '">' + strCTSP_xuatxu + '</p>'
+      }
+      if (strCTSP_thongso !== null)
+        strVar += '						<p class="in-para" id="' + strCTSP_thongso + '">' + strCTSP_thongso + '</p>'
+      if (strCTSP_model !== null)
+        strVar += '						<p class="in-para" id="' + strCTSP_model + '">' + strCTSP_model + '</p>'
+      if (strCTSP_kichthuoc !== null)
+        strVar += '						<p class="in-para" id="' + strCTSP_kichthuoc + '">' + strCTSP_kichthuoc + '</p>'
+      if (strCTSP_congsuat !== null)
+        strVar += '						<p class="in-para" id="' + strCTSP_congsuat + '">' + strCTSP_congsuat + '</p>'
+      if (strCTSP_khoiluong !== null)
+        strVar += '						<p class="in-para" id="' + strCTSP_khoiluong + '">' + strCTSP_khoiluong + '</p>'
+      if (strCTSP_hangsx !== null)
+        strVar += '						<p class="in-para" id="' + strCTSP_hangsx + '">' + strCTSP_hangsx + '</p>'
       strVar += '					</div>'
       strVar += '					<div>'
       strVar += '						<div class="price_single">'
@@ -311,7 +319,7 @@ function xGetSPbyID(id) {
       strVar += '							<div class="clearfix"></div>'
       strVar += '						</div>'
       strVar += '						<h4 class="quick">Mô tả sản phẩm:</h4>'
-      strVar += '						<p class="quick_desc">' + strCTSP_dacdiem + '</p>'
+      if (strCTSP_dacdiem !== null) strVar += '						<p class="quick_desc">' + strCTSP_dacdiem + '</p>'
       strVar += '					<div class="clearfix"> </div>'
       strVar += '					</div>'
       strVar += '				</div>'
