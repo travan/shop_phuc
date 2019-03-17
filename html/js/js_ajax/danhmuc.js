@@ -333,7 +333,7 @@ function xGetSPbyID(id) {
       strVar += '					</div>'
       strVar += '					<div>'
       strVar += '						<div class="price_single">'
-      strVar += '							<span class="reducedfrom ">Liên hệ: 0985.810.399</span>'
+      strVar += '							<span class="reducedfrom ">Giá liên hệ: 0985.810.399</span>'
       strVar += '							<div class="clearfix"></div>'
       strVar += '						</div>'
       strVar += '						<h4 class="quick">Mô tả sản phẩm:</h4>'
